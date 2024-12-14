@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title> <!--Title of the page-->
+<link href="../CSS/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav>
+	<a href="index.html">Home</a> <!--Return to home page-->
+	<a href="About.html">About</a> <!--Link to about page-->
+	<a href="Drinks.html">Drinks</a> <!--Drink menu-->
+	<a href="Appetizers.html">Appetizers</a> <!--Appetizer menu-->
+	<a href="Entrees.html">Entrees</a> <!--Entree menu-->
+	<a href="Desserts.html">Desserts</a> <!--Dessert menu-->
+	
+	
+	
+	
+	</nav>
+<aside>
+	<h1>Cugine's Cuisine</h1> <!--Header of page, underlined-->
+</aside>
+	<h6>Order Online</h6> <!--Title, float left, underlined-->
+	
+	<form>
+		<!--Form to select pickup or delivery option-->
+		<select name="Select (Dropdown List)" class="Select" id="Select (Dropdown list)">
+		<option value="Select (Dropdown list)">Select (Dropdown list)</option>
+		<option value="Pickup">Pickup</option>
+		<option value="Delivery">Delivery</option>
+		
+	</select>
+		<label for="Name" class="Name">Name</label> <!--Place your name-->
+		<input>
+		<label for="Order" class="Order">Order</label> <!--Place your order-->
+		<input>
+		<label for="E-Mail" class="E-Mail">E-Mail</label> <!--Place E-mail-->
+		<input>
+		<label for="Phone" class="Phone">Phone (required):</label>
+	<input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+		pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--Required phone number-->
+		
+	<div class="container">
+	  <button type="submit" class="btn" onClick="openPopUp()">Submit Order</button> <!--Submit order button-->
+	<div class="popup" id="popup">
+		<img src="../Images/ThumbsUp.jpg" width="640" height="427" alt=""/>
+		
+		<p>Your order has been submitted! We are working on it now!</p>
+		<button type="button" onClick="closePopUp()">OK</button>
+		</div>
+		
+</div>
+		
+	</form>
+	
+	<script>
+	let popup = document.getElementById("popup");
+		
+	function openPopup(){
+		popup.classList.add("open-popup");
+	}
+		
+	function ClosePopup(){
+		popup.classList.remove("close-popup");
+	}
+	
+	
+	</script>
+	
+	
+	
+	
+</body>
+</html>

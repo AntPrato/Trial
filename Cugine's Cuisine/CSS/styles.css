@@ -1,0 +1,446 @@
+body {
+    background-image: url(../Images/Flag.jpg); /*Background image for every page, fixed positioning*/
+}
+nav {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; /*font for the nav links at the top of screen*/
+    font-style: italic;
+    font-variant: normal; 
+    font-weight: bold; /*Better visibility*/
+    font-size: large; /*Easier to see*/
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: 50px; /*Spaced out across whole top of the page*/
+    color: #FF090D;
+}
+h1 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: oblique;
+    font-variant: small-caps; /*Small caps differentiates the head of the page from everything else*/
+    font-weight: bolder;
+    font-size: xx-large; /*Double XL so the text clearly stands out*/
+    text-align: center;
+    text-decoration: underline; /*Underlined*/
+    border-top-style: none;
+}
+p {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-style: italic; /*Italic font for the introduction paragraph*/
+    font-weight: bolder;
+    font-variant: normal;
+    font-size: large; /*Easily visible, but not as big as title*/
+    margin-bottom: 50px;
+    margin-top: 335px; /*Spaced towards the bottom so the text is visible in the sky so no background is needed*/
+}
+footer {
+    margin-top: 300px; /*Placed all the way at the bottom of the page*/
+    color: #FFF3F3; /*White text*/
+    background-color: #000000; /*Black background, makes the information stand out*/
+}
+body aside h3 {
+    background-color: #E6E6E6; /*Gray background brings out the text nicely*/
+    margin-left: 0px;
+    margin-right: 900px; /*Text pushed all the way to the left*/
+    min-height: 0px;
+    max-width: 750px;
+}
+body aside h2 {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+body img {
+    float: right; /*Float right*/
+    margin-bottom: 300px; /*Image in middle of page*/
+}
+
+
+body h3 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder; /*Better visibility*/
+    font-size: x-large;
+    text-align: left;
+    text-decoration: underline; /*Underlined to show title*/
+    margin-top: 60px; /*60px from top of page*/
+}
+body ul {
+    background-color: #FFFAFA; /*White background*/
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: large;
+    white-space: pre-line;
+    width: 300px; /*Width wraps around text*/
+    height: 400px; /*Height wraps around text*/
+    word-spacing: 300px; /*Appropriate spacing*/
+  
+}
+
+.gallery{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	border: 2px #A39F9F;
+	margin: auto;
+	
+	
+}
+
+.gallery img{
+	flex-wrap: wrap; /*Flexbox attributes*/
+	width:150px; /*Flexbox equal width*/
+	height:90px; /*Flexbox equal height*/
+	margin: 5px 0; /*Smaller margin to fit all five pictures*/
+}
+
+.grid-container{
+	display: grid; /*Gridbox container*/
+	grid-template-columns: auto auto auto;
+	padding:10px; /*Box model*/
+	background-color: antiquewhite; /*Background for grid container*/
+}
+h5 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
+}
+.Dessert {
+    background-image: url(../Images/Cannolis.jpg);
+    background-attachment: fixed; /*Background image stays in place regardless of large or small screen*/
+}
+
+
+
+.grid-item1{
+    grid-column: 2/span 3; /*Start Column 2, span 3*/
+}
+
+.grid-item2{
+    grid-column: 5/span 1; /*Start Column 5, span 1*/
+}
+
+.grid-item3{
+	grid-column:3/span 2; /*Start Column 3, span 2*/
+	grid-row: 2/span 3; /*Start Row 2, span 3*/
+}
+
+.grid-item4{
+	grid-column:5/span 2; /*Start column 5, span 2*/
+	grid-row:3/span 2; /*Start row 3, span 2*/
+}
+
+.grid-item5{
+	grid-column:1/span 2; /*Start column 1, span 2*/
+	grid-row:2/span 3; /*Start row 2, span 3*/
+}
+
+
+body h4 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large; /*Easily visible*/
+    margin-left: 100px;
+    text-decoration: underline;
+}
+
+.Family {
+    margin: 20px;
+    clear: both;
+}
+.Wine {
+    margin-top: 103px; /*Placed right below the heading*/
+}
+body h6 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+@media (max-width: 750px){
+} /*Media query separates large and small screen rules*/
+
+body {
+    background-image: url(../Images/Flag.jpg); /*Background image, always fixed*/
+}
+nav {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold; /*Easily visible text*/
+    font-size: large;
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: 50px; /*Equally spaced across the top of the page*/
+    color: #FF090D;
+}
+h1 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: xx-large; /*Make clear this is the title of the page*/
+    text-align: center;
+    text-decoration: underline;
+    border-top-style: none;
+}
+p {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-style: italic;
+    font-weight: bolder;
+    font-variant: normal;
+    font-size: large;
+    margin-bottom: 50px;
+    margin-top: 335px;
+}
+footer {
+    margin-top: 300px; /*All the way at the bottom of the page*/
+    color: #FFF3F3; /*White text*/
+    background-color: #000000; /*Black background*/
+}
+body aside h3 {
+    background-color: #E6E6E6; /*Gray background*/
+    margin-left: 0px;
+    margin-right: 900px;
+    min-height: 0px;
+    max-width: 750px;
+}
+body aside h2 {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline; /*Underline makes title clear*/
+}
+body img {
+    float: right; /*Float right*/
+    margin-bottom: 300px;
+}
+
+body h3 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+body ul {
+    background-color: #FFFAFA;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; /*Text decoration for menu*/
+    font-style: italic;
+    font-weight: bolder;
+    font-size: large;
+    white-space: pre-line; /*Enough space so each item is visible*/
+    width: 300px;
+    height: 400px;
+    word-spacing: 300px;
+  
+}
+
+.gallery{
+	display: flex; /*Flexbox*/
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	border: 2px #A39F9F; /*Gray background*/
+	margin: auto;
+	padding: inherit; /*Box model attributes*/
+	
+	
+}
+
+.gallery img{
+	flex-wrap: wrap; /*Flexbox*/
+	width:150px;
+	height:90px;
+	margin: 5px 0;
+	padding: inherit; /*Box Model*/
+}
+
+.grid-container{
+	display: grid; /*Grid container template*/
+	grid-template-columns: auto auto auto;
+	padding:10px;
+	background-color: antiquewhite; /*Background makes images visible*/
+}
+h5 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.grid-item1{
+    grid-column: 2/span 3; /*Start column 2, span 3*/
+}
+
+.grid-item2{
+    grid-column: 5/span 1; /*Start column 5, span 1*/
+}
+
+.grid-item3{
+	grid-column:3/span 2; /*Start column 3, span 2*/
+	grid-row: 2/span 3; /*Start row 2, span 3*/
+}
+
+.grid-item4{
+	grid-column:5/span 2; /*Start column 5, span 2*/
+	grid-row:3/span 2; /*Start row 3, span 2*/
+}
+
+.grid-item5{
+	grid-column:1/span 2; /*Start column 1, span 2*/
+	grid-row:2/span 3; /*Start row 2, span 3*/
+}
+
+
+body h4 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 100px;
+}
+
+.Family {
+    margin: 20px; /*Good spacing between pictures*/
+    clear: both;
+}
+.Wine {
+    margin-top: 103px;
+}
+body h6 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+
+.Name {
+    color: #000000; /*Black text*/
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: #FC0004; /*Red background*/
+}
+.Order {
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: 0px 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: #FF0004; /*Red background*/
+}
+
+.E-Mail {
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: #FF0004; /*Red background*/
+}
+.Phone {
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: #FF0004; /*Red background*/
+}
+.Contact {
+}
+.Thanks {
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: #FFFFFF; /*White background*/
+}
+.Calamari {
+    font-weight: bolder;
+    font-size: large;
+    color: #FFFFFF;
+    background-color: #000000; /*Black Background*/
+}
+.Meatballs {
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #000000; /*Black Background*/
+}
+.Salad {
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #000000; /*Black Background*/
+}
+.Soup {
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #000000; /*Black Background*/
+}
+.Mussels {
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #000000; /*Black Background*/
+}
+.Table {
+    float: right; /*Float right*/
+	background-attachment: fixed; /*Fixed positioning*/
+	
+}
+
+.container{
+	width: auto;
+	height:auto;
+	display: flex;
+	
+}
+
+.btn{
+	padding: 20px 70px;
+	align-content: center;
+	
+}
+
+.popup{
+	width: 200px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left:50%;
+	transform: translate(-50%,-50%) scale(0.1);
+	text-align: center;
+	padding: 0 1px 1px;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+	visibility: visible;
+	top: 90%;
+	transform: translate(-50%,-50%) scale(1);
+	
+}
+
+.popup img{
+	width: 400px;
+	margin-top: -50%;
+	border-radius: 50%;
+	box-shadow: 0 10px;
+}
+
+.popup button{
+	width: 100%;
+	margin-top: auto;
+	padding: 10px;
+	
+}
+
+
